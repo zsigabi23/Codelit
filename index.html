@@ -471,6 +471,21 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div id="googleMap"></div>
+
+            <script>
+                function myMap() {
+                var mapProp= {
+                  center:new google.maps.LatLng(-26.164361, 27.873754),
+                  zoom:5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+                </script>
+                
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9VFxXzIFZYBY8_3na2QM_mWz4BdgjvBc&callback=myMap"></script>
+        </section>
 <script src="js/main.js"></script>
 </body>
 </html>
